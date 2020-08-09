@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <RelativeLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerVertical="true"
+        android:elevation="10dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="300dp">
+
+        <RelativeLayout
+            android:background="@drawable/backgroundwhite"
+            android:padding="5pt"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:touchscreenBlocksFocus="false"
+            android:layout_marginBottom="3dp">
+
+            <com.hbb20.CountryCodePicker
+
+                android:id="@+id/countryCodeHolder"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_defaultNameCode="KE"
+                app:ccp_customMasterCountries="KE,TZ,UG"
+                android:layout_marginStart="2dp" />
+
+            <EditText
+                android:layout_below="@id/countryCodeHolder"
+                android:maxLength="15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/EDTNumber"
+                android:layout_marginTop="4dp"
+                android:padding="10dp"
+                android:textColor="#ff1a102c"
+                android:textSize="20dp"
+                android:hint="Your phone number"
+                android:layout_marginBottom="10dp"
+                android:inputType="phone" >
+
+            </EditText>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/EDTNumber"
+                android:text="We will send you one time sms message carrier rates may apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="25pt"
+                android:text="Next"
+                android:id="@+id/buNext"
+                android:background="@drawable/green_button"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:id="@+id/contentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</RelativeLayout>

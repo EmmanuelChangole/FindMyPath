@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "177730820925",
+    "firebase_url": "https://findmypath-edf15.firebaseio.com",
+    "project_id": "findmypath-edf15",
+    "storage_bucket": "findmypath-edf15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177730820925:android:c423587f0778b8bd8e0354",
+        "android_client_info": {
+          "package_name": "com.echangole.findme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177730820925-82phc0fsnjcqqh48oqro18b8g69vpt3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.echangole.findme",
+            "certificate_hash": "5d61b66f74a366528e3b7f2c7f60cbf3bec301dc"
+          }
+        },
+        {
+          "client_id": "177730820925-s8pob6ecqv1llgdioijk9ft6n0eskl94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB73ThpuaXivtET6Q02g4QC3qn0VLeoom0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177730820925-s8pob6ecqv1llgdioijk9ft6n0eskl94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

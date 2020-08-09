@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".ActivityOtp">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:padding="10dp"
+        android:layout_height="280dp"
+        app:cardCornerRadius="6dp"
+        android:elevation="6dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_above="@id/tvResend"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_centerVertical="true">
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tvOtpDetails"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="@string/otp_message"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCodeSent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tvOtpDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please type verification code sent"
+                    />
+                <TextView
+                    android:layout_marginTop="1dp"
+                    android:layout_below="@id/tvCodeSent"
+                    android:id="@+id/tvNumber"
+                    android:text="0702073189"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.chaos.view.PinView
+                    android:layout_below="@+id/tvNumber"
+                    android:id="@+id/pinView"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/black"
+                    app:itemSpacing="10dp"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    app:itemCount="6"
+                    app:itemHeight="30dp"
+                    app:itemWidth="30dp"
+                    app:itemRadius="4dp"
+                    app:lineColor="@color/blue"
+                    app:viewType="rectangle"
+                    android:layout_centerHorizontal="true"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tvResend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:text="Didn't get the OTP? RESEND OTP."
+
+
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/butSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/white"
+                    android:text="Done"
+                    >
+
+                </Button>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
